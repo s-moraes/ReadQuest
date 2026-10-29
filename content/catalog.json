@@ -1,0 +1,12 @@
+{
+  "version": 4,
+  "subjects": [
+    {
+      "id": "readquest-guide",
+      "title": "Mastering ReadQuest: The Complete App Guide",
+      "description": "Comprehensive guide to navigation, reading controls, quizzes, custom themes, and course authoring.",
+      "version": 1,
+      "courseJsonPath": "content/readquest-guide/subject.json"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "readquest-guide",
+  "title": "Mastering ReadQuest",
+  "version": 1,
+  "assets": [],
+  "path": [
+    {
+      "id": "getting-started",
+      "title": "Foundations & Navigation",
+      "description": "Learn the core layout of ReadQuest: tabs, active subject selector, and learning path progress.",
+      "icon": "ic_navigation",
+      "topics": [
+        {
+          "id": "guide-01-app-overview",
+          "title": "App Anatomy & Core Navigation",
+          "file": "learn/01-app-overview.md",
+          "relatedQuizId": "quiz-navigation",
+          "relatedExtraIds": ["curiosity-deterministic-parser"]
+        },
+        {
+          "id": "guide-02-reading-experience",
+          "title": "Distraction-Free Reading & Gesture Controls",
+          "file": "learn/02-reading-experience.md",
+          "relatedQuizId": "quiz-navigation",
+          "relatedExtraIds": ["history-study-hubs"]
+        }
+      ]
+    },
+    {
+      "id": "reader-and-quizzes",
+      "title": "Themes, Typography & Quizzes",
+      "description": "Master eye comfort presets, custom color palettes, and timed assessments.",
+      "icon": "ic_appearance",
+      "topics": [
+        {
+          "id": "guide-03-themes-and-appearance",
+          "title": "Themes, Typography & Eye Comfort",
+          "file": "learn/03-themes-and-appearance.md",
+          "relatedQuizId": "quiz-advanced",
+          "relatedExtraIds": []
+        },
+        {
+          "id": "guide-04-quizzes-and-evaluations",
+          "title": "Taking Assessments & Reviewing Mistakes",
+          "file": "learn/04-quizzes-and-evaluations.md",
+          "relatedQuizId": "quiz-navigation",
+          "relatedExtraIds": ["history-study-hubs"]
+        }
+      ]
+    },
+    {
+      "id": "sync-and-content-authoring",
+      "title": "Sync & Course Authoring",
+      "description": "Connect GitHub repositories, synchronize content offline, and author your own study courses.",
+      "icon": "ic_sync",
+      "topics": [
+        {
+          "id": "guide-05-github-sync-and-offline",
+          "title": "GitHub Sync & Offline Architecture",
+          "file": "learn/05-github-sync-and-offline.md",
+          "relatedQuizId": "quiz-advanced",
+          "relatedExtraIds": ["use-case-private-study-repo"]
+        },
+        {
+          "id": "guide-06-authoring-study-material",
+          "title": "Authoring Courses, Quizzes & Manifests",
+          "file": "learn/06-authoring-study-material.md",
+          "relatedQuizId": "quiz-advanced",
+          "relatedExtraIds": ["use-case-private-study-repo", "curiosity-deterministic-parser"]
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "use-case-private-study-repo",
+      "title": "Deploying a Team Study Hub on GitHub",
+      "summary": "Step-by-step architecture for publishing private or public training materials using raw GitHub URLs.",
+      "type": "USE_CASE",
+      "tags": ["GitHub", "Enterprise", "Sync"],
+      "tier": "CORE",
+      "unlockAfterPathId": "sync-and-content-authoring",
+      "externalUrl": null,
+      "file": "extra/use-case-private-study-repo.md"
+    },
+    {
+      "id": "curiosity-deterministic-parser",
+      "title": "Deterministic Parsing Without WebViews",
+      "summary": "How ReadQuest delivers high 60fps scrolling and instant load times with native Compose regex splitters.",
+      "type": "CURIOSITY",
+      "tags": ["Architecture", "Kotlin", "Compose"],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/curiosity-deterministic-parser.md"
+    },
+    {
+      "id": "history-study-hubs",
+      "title": "From Leitner Boxes to Modern Study Hubs",
+      "summary": "The history and cognitive science behind active recall, progressive gating, and bite-sized technical reading.",
+      "type": "HISTORY",
+      "tags": ["CognitiveScience", "Learning", "Recall"],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": null,
+      "file": "extra/history-study-hubs.md"
+    },
+    {
+      "id": "jetpack-compose-docs",
+      "title": "Official Jetpack Compose Documentation",
+      "summary": "Google's modern declarative UI framework powering ReadQuest's smooth animations and reactive state management.",
+      "type": "EXTERNAL_LINK",
+      "tags": ["Android", "Compose", "Kotlin"],
+      "tier": "FREE",
+      "unlockAfterPathId": null,
+      "externalUrl": "https://developer.android.com/compose",
+      "file": null
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-navigation",
+      "title": "Navigation & Reading Fundamentals",
+      "relatedPathId": "getting-started",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/navigation-quiz.md"
+    },
+    {
+      "id": "quiz-advanced",
+      "title": "Customization, Sync & Authoring",
+      "relatedPathId": "sync-and-content-authoring",
+      "questionCount": 5,
+      "timeLimitMinutes": 5,
+      "passPercentage": 70,
+      "file": "quiz/advanced-quiz.md"
+    }
+  ]
+}
